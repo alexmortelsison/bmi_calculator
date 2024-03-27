@@ -29,15 +29,73 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
         title: const Text('BMI CALCULATOR'),
       ),
-      body: const Center(
-        child: Text('Body Text'),
+      body: const Column(
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: ReusableCard(
+                    Color(
+                      0xFF1D1E33,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: ReusableCard(
+                    Color(
+                      0xFF1D1E33,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: ReusableCard(
+              Color(
+                0xFF1D1E33,
+              ),
+            ),
+          ),
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: ReusableCard(
+                    Color(
+                      0xFF1D1E33,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: ReusableCard(
+                    Color(
+                      0xFF1D1E33,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color.fromARGB(255, 26, 194, 241),
-        onPressed: () {},
-        child: const Icon(
-          Icons.add,
-        ),
+    );
+  }
+}
+
+class ReusableCard extends StatelessWidget {
+  const ReusableCard(this.colour, {super.key});
+
+  final Color colour;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.all(15),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10), color: colour,
+        // 0xFF1D1E33
       ),
     );
   }
