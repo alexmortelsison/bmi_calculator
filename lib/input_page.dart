@@ -245,19 +245,14 @@ class _InputPageState extends State<InputPage> {
               decoration: const BoxDecoration(
                 color: bottomContainerColor,
               ),
-              margin: const EdgeInsets.only(
-                top: 15,
-              ),
+              margin: const EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(bottom: 20),
               width: double.infinity,
               height: bottomContainerHeight,
               child: const Center(
                   child: Text(
                 "CALCULATE",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: largeButtonTextStyle,
               )),
             ),
           ),
