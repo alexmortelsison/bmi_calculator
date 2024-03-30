@@ -29,3 +29,12 @@ const resultTextStyle = TextStyle(
   fontSize: 22,
   fontWeight: FontWeight.bold,
 );
+
+const bmiTextStyle = TextStyle(
+  fontSize: 100,
+  fontWeight: FontWeight.bold,
+);
+
+const bodyTextStyle = TextStyle(
+  fontSize: 22,
+);
